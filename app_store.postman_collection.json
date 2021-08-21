@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "bc2df764-2886-4596-b2f2-42475bc136dc",
+		"name": "app_store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user5\",\r\n      \"password\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user\",\r\n      \"password\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/user/install/6120e5c6b3468540c420b050",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxMGJmNTY2YThiZjQwNjQ4Y2RlMDQiLCJuYW1lIjoidXNlcjIiLCJyb2xlIjoidXNlciIsImlhdCI6MTYyOTU1NTcyOX0.iSTrnaIzoZtXF5-uzjL9DxdYz0AehtYh9bIwuhuhcX0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/install/6120e5c6b3468540c420b050",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"install",
+						"6120e5c6b3468540c420b050"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/user/apps",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxMGJmNTY2YThiZjQwNjQ4Y2RlMDQiLCJuYW1lIjoidXNlcjIiLCJyb2xlIjoidXNlciIsImlhdCI6MTYyOTU1NTk2Nn0.U4nFUSoHJKKK6XxvoU2oRejZiqW4GiCiBwQVY6CLoak",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/apps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"apps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/user/apps/:appId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxMGJmNTY2YThiZjQwNjQ4Y2RlMDQiLCJuYW1lIjoidXNlcjIiLCJyb2xlIjoidXNlciIsImlhdCI6MTYyOTU1NTcyOX0.iSTrnaIzoZtXF5-uzjL9DxdYz0AehtYh9bIwuhuhcX0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/apps/6120e5b8b3468540c420b04c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"apps",
+						"6120e5b8b3468540c420b04c"
+					],
+					"query": [
+						{
+							"key": "auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIwYjE4OTM1MmM4YjM2NTg5ZTE2M2MiLCJuYW1lIjoiZGRkZGRkZCIsImlhdCI6MTYyOTU0MDk5OX0.ggDamQvN9PN1gJZRd4Q4IxYbdfpyv2SUoai2C1lv3bI",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/company/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"company2\",\r\n    \"password\":\"jcjfkj\",\r\n    \"website_url\":\"dsdfff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/company/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"company",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/company/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"company2\",\r\n    \"password\":\"jcjfkj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/company/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"company",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/company/create_app",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxMGMzMjY2YThiZjQwNjQ4Y2RlMDgiLCJuYW1lIjoiY29tcGFueTIiLCJyb2xlIjoiZGV2IiwiaWF0IjoxNjI5NTU1ODE3fQ.xa9qP3K4t51smv5LAn4mPMbI8ZqSaxvQiyxPCtGrOU4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"app4\",\r\n    \"icon\":\"sss.com\",\r\n     \"brief_description\":\"dfdf\",\r\n      \"long_description\":\"sedfsdsd dfgdfgv dfgdfgb dfgbdf\",\r\n    \"price\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/company/create_app",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"company",
+						"create_app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/company/income",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxMGMzMjY2YThiZjQwNjQ4Y2RlMDgiLCJuYW1lIjoiY29tcGFueTIiLCJyb2xlIjoiZGV2IiwiaWF0IjoxNjI5NTU1ODE3fQ.xa9qP3K4t51smv5LAn4mPMbI8ZqSaxvQiyxPCtGrOU4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/company/income",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"company",
+						"income"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/admin/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/admin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/user/uninstall/6120e5c6b3468540c420b050",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIwZTRjN2Q1ODQyYTQxMDA2NmM1NmEiLCJuYW1lIjoidXNlcjEiLCJpYXQiOjE2Mjk1NDU2OTh9.imHKAvHvRXgqsc73AkVHyenYYIs9T1URTLEfcvBHCoE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/uninstall/6120e5c6b3468540c420b050",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"uninstall",
+						"6120e5c6b3468540c420b050"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/admin/income",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2Mjk1NDkzNzF9.qFgn2Gjmua0pPwHvbcx9Lm5FQAOECDzyP6Zn5zhdvz0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/admin/income",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"income"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
